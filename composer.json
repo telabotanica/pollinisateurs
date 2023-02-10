@@ -4,7 +4,7 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "php": "^7.3",
+        "php": "^8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.2",
@@ -67,7 +67,7 @@
         },
         "sort-packages": true,
         "platform": {
-            "php": "7.3.23"
+            "php": "8.1.15"
         },
         "allow-plugins": {
             "symfony/flex": true
