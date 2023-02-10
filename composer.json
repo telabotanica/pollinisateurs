@@ -13,7 +13,7 @@
         "doctrine/doctrine-fixtures-bundle": "^3.4.2",
         "doctrine/doctrine-migrations-bundle": "^3.2.2",
         "doctrine/orm": "^2.14.1",
-        "fzaninotto/faker": "^1.9.2",
+        "fakerphp/faker": "^1.21.0",
         "gaufrette/local-adapter": "^0.4.0",
         "knplabs/gaufrette": "^0.9.0",
         "knplabs/knp-gaufrette-bundle": "^0.7.1",
