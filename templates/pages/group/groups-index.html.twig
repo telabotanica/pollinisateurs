@@ -17,9 +17,9 @@
 					<p class="h1">{{ 'pages.group.groups.subtitle'|trans }}</p>
 
 					<p>
-						<a class="cta__white" href="{{ path('homepage') }}">{{ 'ui.see_more'|trans }}</a>
+						<a class="cta" href="{{ path('homepage') }}">{{ 'ui.see_more'|trans }}</a>
 						{% if is_granted(constant('App\\Security\\GroupVoter::CREATE')) %}
-							<a class="cta__white" href="{{ path('group_new') }}">{{ 'pages.group.group_create.link'|trans }}</a>
+							<a class="cta" href="{{ path('group_new') }}">{{ 'pages.group.group_create.link'|trans }}</a>
 						{% endif %}
 					</p>
 				</div>

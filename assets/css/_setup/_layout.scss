@@ -20,7 +20,7 @@ body {
 	}
 
 	color:            $color_default;
-	background-color: $color_grey_lighter;
+	background-color: $color_blue_sky;
 }
 
 button,
@@ -45,7 +45,7 @@ img {
 }
 
 .cta__inverted {
-	@include cta-style($color_action, true);
+	@include cta-style($color_aubergine, true);
 }
 
 a:not([class]) {
@@ -63,7 +63,7 @@ p:not([class]):not(:last-child), .p {
 }
 
 p a:not([class]) {
-	color: $color_action;
+	color: $color_aubergine;
 }
 
 figcaption {
