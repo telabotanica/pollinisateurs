@@ -22,28 +22,24 @@
 	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	font-style:  normal;
-	//src: url("fonts/century-gothic/CenturyGothic.ttf") format("truetype");
 }
 
 @mixin font_default_bold {
 	font-family: "Century Gothic Bold", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-style:  normal;
-	//src: url("fonts/century-gothic/GOTHICB.TTF") format("truetype");
 }
 
 @mixin font_title {
 	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	font-style:  normal;
-	//src: url("fonts/century-gothic/CenturyGothic.ttf") format("truetype");
 }
 
 @mixin font_title_bold {
 	font-family: "Century Gothic Bold", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-style:  normal;
-	//src: url("fonts/century-gothic/GOTHICB.TTF") format("truetype");
 }
 
 @mixin font_helvetica {
