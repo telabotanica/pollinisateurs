@@ -48,11 +48,15 @@
 		min-height: rem(40px);
 	}
 
-	color:         $color_grey_lightest;
+	color:         $color_grey_dark;
 	background:    white;
 
 	border:        1px solid $color_grey_border;
 	border-radius: 0;
+
+	&::placeholder {
+		color: $color_grey_lightest;
+	}
 
 	&:disabled {
 		color: #999999;

@@ -4,8 +4,7 @@
 
 .breadcrumb {
 	margin:        0 0 column_gap();
-	padding:       0 0 padding_vertical();
-	border-bottom: 1px solid $color_grey_border;
+	padding:       0 0 0 padding_vertical();
 
 	@include clearulli;
 
@@ -49,7 +48,6 @@
 }
 
 .main--header__cover .breadcrumb {
-	border-bottom-color: white;
 
 	span {
 		color:   white;
