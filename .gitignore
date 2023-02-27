@@ -29,3 +29,7 @@ files
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+###> composer.lock ###
+/composer.lock
+###< composer.lock ###
