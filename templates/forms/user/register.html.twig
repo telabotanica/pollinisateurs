@@ -15,7 +15,7 @@
 					{{ 'forms.user.agree_terms.label.agree'|trans|raw }}
 
 					{% if terms_of_use.group_slug is not empty and terms_of_use.page_slug is not empty %}
-						<a href="{{ path('group_page_index', { 'groupSlug': 'communaute', 'pageSlug': 'mentions-legales' }) }}" target="_blank">
+						<a href="{{ path('group_page_index', { 'groupSlug': terms_of_use.group_slug, 'pageSlug': terms_of_use.page_slug }) }}" target="_blank">
 							{{ 'forms.user.agree_terms.label.terms_of_use'|trans|raw }}
 						</a>
 					{% else %}
