@@ -6,7 +6,7 @@ permissions:
   contents: read
 
 jobs:
-  symfony-tests:
+  tests:
     runs-on: ubuntu-latest
     env:
       DATABASE_URL: mysql://default:password@127.0.0.1:3306/test
@@ -58,7 +58,8 @@ jobs:
       run: ./vendor/bin/phpunit
   deploy-staging:
     runs-on: ubuntu-latest
-    if: success() && github.ref == 'refs/heads/main'
+    needs: tests
+    if: github.ref == 'refs/heads/main'
     env:
       CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
       CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
@@ -72,7 +73,8 @@ jobs:
         alias: staging
   deploy-prod:
     runs-on: ubuntu-latest
-    if: success() && github.ref == 'refs/heads/production'
+    needs: tests
+    if: github.ref == 'refs/heads/production'
     env:
       CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
       CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
