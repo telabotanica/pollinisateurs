@@ -18,10 +18,11 @@ main {
 }
 
 .main--header__cover {
-	min-height: math.div(237, 375) * 100vw;
+	min-height: math.div(688, 1366) * 100vw;
 
 	@include medium-or-more {
-		min-height: rem(500px);
+		min-height: rem(850px);
+
 	}
 }
 

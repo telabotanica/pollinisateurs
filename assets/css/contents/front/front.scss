@@ -19,6 +19,17 @@
 		margin-bottom: rem(80px);
 	}
 }
+.front-page--title {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  margin-bottom: 3.75rem;
+
+  & h2 {
+    font-weight: bold;
+  }
+}
 
 .front-page--columns {
 	text-align: center;
@@ -26,6 +37,14 @@
 	svg {
 		height: rem(85px);
 	}
+
+  &.columns-25{
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+      }
 }
 
 .front-page--focus {
