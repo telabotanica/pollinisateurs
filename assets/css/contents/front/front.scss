@@ -57,31 +57,31 @@
   margin-bottom: rem(24px);
 
   &.green {
-    background-color: #06A243;
+    background-color: $color_green;
 
     & svg {
-      fill: #0ae372;
+      fill: $color_green-haze;
     }
   }
   &.blue {
-    background-color: #92D4F2;
+    background-color: $color_blue;
 
     & svg {
-      fill: #dff2fb;
+      fill: $color_jordy-blue;
     }
   }
   &.yellow {
-    background-color: #F3CC00;
+    background-color: $color_yellow;
 
     & svg {
-      fill: #e79900;
+      fill: $color_tangerine;
     }
   }
   &.purple {
-    background-color: #8F607C;
+    background-color: $color_purple;
 
     & svg {
-      fill: #dea3d3;
+      fill: $color_light-orchid;
     }
   }
 
@@ -89,12 +89,12 @@
   &.blue,
   &.yellow,
   &.purple {
-    align-items: center;
-    border-radius: 50%;
-    display: flex;
-    height: 150px;
-    justify-content: center;
-    width: 150px;
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    border-radius:    50%;
+    height:           rem(150px);
+    width:            rem(150px);
   }
 }
 
@@ -135,10 +135,21 @@
 
 // Front page POLLINATING
 .front-page--pollinating{
-  padding: rem(140px) 0;
   background-color: white;
 
+  &-image{
+    object-fit: cover;
+  }
+  & .columns__50-50 {
+    justify-content: flex-start;
+  }
+
   &-description {
+    margin-top: rem(100px);
+    margin-bottom: rem(100px);
+    margin-left: rem(100px);
+    max-width: 26.75rem;
+
     & h1{
       font-size: rem(40px);
       color: #333;
@@ -161,8 +172,17 @@
 }
 
 // Front page ABOUT US
-
 .front-page--about-us{
-  padding: rem(140px) 0;
   background-color: white;
+
+  & .columns__50-50 {
+    justify-content: flex-end;
+  }
+
+  &-description {
+    margin-top: rem(100px);
+    margin-bottom: rem(100px);
+    margin-right: rem(100px);
+    max-width: 26.75rem;
+  }
 }

@@ -74,9 +74,8 @@
 			</div>
 		</section>
 		<section class="front-page--pollinating">
-			<div class="content-container">
 				<div class="front-page--columns columns__50-50" style="text-align: left">
-					{# {% include 'assets/images/BIOS-1905362.jpg' %} #}
+					<img class="front-page--pollinating-image" src="{{ asset('/media/layout/BIOS-1905362.jpg') }}" alt="foraging bee">
 				<div class="front-page--pollinating-description">
 					<h1>C’est quoi un pollinisateur ?</h1>
 					<p>Les pollinisateurs les plus emblématiques et les mieux connus du grand public sont les abeilles (dont l’abeille domestique, les bourdons…), les mouches (syrphes…), les papillons, et de nombreux coléoptères. Certains oiseaux (colibris) ou encore des mammifères (chauve-souris nectarivores) jouent également un rôle important de pollinisation durant tout ou partie de leur stade de vie adulte.</p>
@@ -86,7 +85,6 @@
 					<h3>Le saviez-vous ?</h3>
 					<p>Il y a 2 fois plus de coléoptères que de plantes en France ! Et pourtant il y a moins d’entomologistes que de botanistes.</p>
 				</div>
-			</div>
 		</section>
 		<section class="front-page--banner">
 			<div class="content-container">
@@ -97,16 +95,11 @@
 			</div>
 		</section>
 			<section class="front-page--about-us">
-				<div class="content-container">
 					<div class="front-page--columns columns__50-50" style="text-align: left">
-						<div>
+						<div class="front-page--about-us-description">
 							<h1>Qui sommes-nous ?</h1>
 							<p>La plateforme Nos pollinisateurs est créée par des passionnés de plusieurs domaines :</p>
 							<p> </p>
-							{#<svg viewBox="0 0 4 100" xmlns="http://www.w3.org/2000/svg">
-								<line x1="2" y1="0" x2="2" y2="100"
-										style="stroke: #8F607C; stroke-width: 2"/>
-							</svg>#}
 							<h3 style="color: #8F607C">Réalisé par :</h3>
 							<p> </p>
 							<h3 style="color: #06A243">En collaboration avec :</h3>
@@ -114,8 +107,7 @@
 							<h3 style="color: #92D4F2">Avec l’appui de :</h3>
 							<p> </p>
 					</div>
-					<img src="{{ asset('media/layout/help.svg') }}" alt="" style="width:25%">
-				</div>
+					<img class="front-page--about-us-image" src="{{ asset('/media/layout/BIOS-2466801.jpg') }}" alt="blue butterfly">
 			</section>
 			<p>
 			{#<img src="{{ asset('media/layout/logos_naturadapt_2022.png') }}" alt="partenaires du Nos Pollinisateurs">#}
