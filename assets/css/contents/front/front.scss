@@ -22,6 +22,10 @@
   &-info{
     padding: rem(140px) 0;
     background-color: white;
+
+    @include small-or-less{
+      padding: rem(70px) 0;
+    }
   }
 
   &-title {
@@ -45,6 +49,17 @@
       grid-column-gap: rem(30px);
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
+
+      @include medium{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: rem(30px);
+        grid-row-gap: rem(50px);
+      }
+
+      @include small-or-less{
+        grid-template-columns: 1fr;
+        grid-row-gap: rem(50px);
+      }
     }
   }
 
@@ -97,6 +112,9 @@
       height:           rem(150px);
       width:            rem(150px);
     }
+
+    @include medium-or-less { margin-bottom: rem(20px); }
+    @include small-or-less { margin-bottom: rem(16px); }
   }
 }
 
@@ -116,6 +134,11 @@
 
   &-image{
     object-fit: cover;
+
+
+    @include medium-or-less {
+      width: 100%;
+    }
   }
   & .columns__50-50 {
     justify-content: flex-start;
@@ -138,6 +161,16 @@
       font-size: rem(26px);
       color: #8F607C;
     }
+
+    @include medium-or-less {
+      margin: rem(50px) auto;
+    }
+
+    @include small-or-less {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      padding-bottom: 5rem;
+    }
   }
 }
 
@@ -146,6 +179,10 @@
   padding: rem(140px) 0;
   background-color: $color_blue_sky;
   text-align: center;
+
+  @include small-or-less {
+    padding: rem(70px) 0;
+  }
 }
 
 // ABOUT US
@@ -161,10 +198,24 @@
     margin-bottom: rem(100px);
     margin-right: rem(100px);
     max-width: 26.75rem;
+
+    @include medium-or-less {
+      margin: rem(50px) auto;
+    }
+    @include small-or-less {
+      width: 100%;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      padding: 6.25rem 0;
+    }
   }
   &-image{
     max-height: 808px;
     object-fit: cover;
+
+    @include medium-or-less {
+      width: 100%;
+    }
   }
 }
 
