@@ -55,7 +55,7 @@
 	border-radius: 0;
 
 	&::placeholder {
-		color: $color_grey_lightest;
+		color: $color_grey_light;
 	}
 
 	&:disabled {
@@ -141,13 +141,6 @@ input[type="search"] {
 		background-size:     rem(22px) rem(22px);
 		background-position: rem(15px) center;
 	}
-}
-
-#search-bar-input::placeholder,
-input[type="search"]::placeholder,
-input[type="search"]::-webkit-input-placeholder,
-input[type="search"]::-moz-placeholder {
-  color: $color_grey_light;
 }
 
 select {
