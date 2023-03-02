@@ -19,12 +19,12 @@
 // Front page INFO
 
 .front-page--info{
-  padding: 140px 0;
-  background-color: $color_blue_sky;
+  padding: rem(140px) 0;
+  background-color: white;
 }
 
 .front-page--title {
-  font-size: 26px;
+  font-size: rem(26px);
   margin-bottom: 3.75rem;
   text-align: center;
 
@@ -41,7 +41,7 @@
 
   &.columns-25{
     display: grid;
-    grid-column-gap: 30px;
+    grid-column-gap: rem(30px);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }
@@ -54,7 +54,7 @@
 }
 
 .icon-background {
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 
   &.green {
     background-color: #06A243;
@@ -98,22 +98,6 @@
   }
 }
 
-.front-page--focus {
-	padding:          rem(30px) padding_horizontal();
-
-	text-align:       center;
-	background-color: white;
-
-	font-size:        rem(22px);
-	line-height:      math.div(26, 22);
-
-	@include medium-or-more {
-		margin-left:  rem(160px);
-		margin-right: rem(160px);
-		padding:      rem(30px) rem(60px);
-	}
-}
-
 .front-page--objective {
 	@include small-or-less {
 		text-align: center;
@@ -137,4 +121,48 @@
 			margin-right: rem(30px);
 		}
 	}
+}
+
+// Front page HOW IT WORKS
+.front-page--how-it-works{
+  padding: rem(140px) 0;
+  background-color: $color_blue_sky;
+
+  &-cta {
+    margin-top: rem(40px);
+  }
+}
+
+// Front page POLLINATING
+.front-page--pollinating{
+  padding: rem(140px) 0;
+  background-color: white;
+
+  &-description {
+    & h1{
+      font-size: rem(40px);
+      color: #333;
+      font-weight: bold;
+      font-family: "Century Gothic Bold", Helvetica, Arial, sans-serif;
+    }
+
+    & h3 {
+      font-size: rem(26px);
+      color: #8F607C;
+    }
+  }
+}
+
+// Front page BANNER
+.front-page--banner{
+  padding: rem(140px) 0;
+  background-color: $color_blue_sky;
+  text-align: center;
+}
+
+// Front page ABOUT US
+
+.front-page--about-us{
+  padding: rem(140px) 0;
+  background-color: white;
 }

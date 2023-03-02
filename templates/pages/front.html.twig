@@ -30,33 +30,33 @@
 				<div class="front-page--columns columns-25">
 					<div class="front-page--card">
 						<div class="icon-background yellow">
-								{% include 'assets/echange.svg' %}
+								{% include 'assets/svg/echange.svg' %}
 						</div>
 						<p class="front-page--card--image--text">Des projets collaboratifs pour mettre vos envies et savoirs faires au profit d’actions concrètes.</p>
 					</div>
 					<div class="front-page--card">
 						<div class="icon-background purple">
-								{% include 'assets/protection.svg' %}
+								{% include 'assets/svg/protection.svg' %}
 						</div>
 						<p class="front-page--card--image--text">Des projets collaboratifs pour mettre vos envies et savoirs faires au profit d’actions concrètes.</p>
 					</div>
 					<div class="front-page--card">
 						<div class="icon-background blue">
-								{% include 'assets/recherche.svg' %}
+								{% include 'assets/svg/recherche.svg' %}
 						</div>
 						<p class="front-page--card--image--text">Des projets collaboratifs pour mettre vos envies et savoirs faires au profit d’actions concrètes.</p>
 					</div>
 					<div class="front-page--card">
 						<div class="icon-background green">
-								{% include 'assets/dossier.svg' %}
+								{% include 'assets/svg/dossier.svg' %}
 						</div>
 						<p class="front-page--card--image--text">Des projets collaboratifs pour mettre vos envies et savoirs faires au profit d’actions concrètes.</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="main--content content-container">
-			<section>
+		<section class="front-page--how-it-works">
+			<div class="content-container">
 				<h1>Comment ça marche ?</h1>
 				<p>
 					Inscrivez-vous et rejoignez la communauté ! Dès que votre compte personnel est créé vous rejoignez l’espace central communautaire vous permettant d’échanger avec tous les inscrits !
@@ -67,15 +67,17 @@
 				<p>
 					Vous avez envie de porter une action ? De créer par exemple un recensement des pépinières de végétaux locaux favorables à la biodiversité ?
 				</p>
-			</section>
-			<section>
-				<h3>Et si vous aussi vous lanciez votre projet ?</h3>
-				<a href="/groups" class="cta">Voir les groupes</a>
-			</section>
-			<section>
+				<div class="front-page--how-it-works-cta">
+					<h3>Et si vous aussi vous lanciez votre projet ?</h3>
+					<a href="/groups" class="cta">Voir les groupes</a>
+				</div>
+			</div>
+		</section>
+		<section class="front-page--pollinating">
+			<div class="content-container">
 				<div class="front-page--columns columns__50-50" style="text-align: left">
-				<img src="{{ asset('media/layout/help.svg') }}" alt="" style="width:25%">
-				<div>
+					{# {% include 'assets/images/BIOS-1905362.jpg' %} #}
+				<div class="front-page--pollinating-description">
 					<h1>C’est quoi un pollinisateur ?</h1>
 					<p>Les pollinisateurs les plus emblématiques et les mieux connus du grand public sont les abeilles (dont l’abeille domestique, les bourdons…), les mouches (syrphes…), les papillons, et de nombreux coléoptères. Certains oiseaux (colibris) ou encore des mammifères (chauve-souris nectarivores) jouent également un rôle important de pollinisation durant tout ou partie de leur stade de vie adulte.</p>
 					<p> La pollinisation est essentielle, sans cela la reproduction de nombreuses plantes sauvages et la production de plantes cultivées ne seraient pas possibles. Les pollinisateurs sont aussi et surtout les garants de la richesse des écosystèmes. Il est important de les préserver !</p>
@@ -84,36 +86,40 @@
 					<h3>Le saviez-vous ?</h3>
 					<p>Il y a 2 fois plus de coléoptères que de plantes en France ! Et pourtant il y a moins d’entomologistes que de botanistes.</p>
 				</div>
-			</section>
-			<section class="front-page--focus">
+			</div>
+		</section>
+		<section class="front-page--banner">
+			<div class="content-container">
 				<h1>Je veux agir !</h1>
 				<p>Un grand pouvoir ne nécessite pas forcément de grandes responsabilités ! Tout le monde peut agir à son échelle et en fonction de ses envies et de ses connaissances !</p>
 				<p> Découvrez comment agir en fonction de votre milieu, vos envies, votre temps.</p>
 				<a href="/user/login" class="cta">Rejoindre la plateforme !</a>
-			</section>
-			<section>
-				<div class="front-page--columns columns__50-50" style="text-align: left">
-					<div>
-						<h1>Qui sommes-nous ?</h1>
-						<p>La plateforme Nos pollinisateurs est créée par des passionnés de plusieurs domaines :</p>
-						<p> </p>
-						{#<svg viewBox="0 0 4 100" xmlns="http://www.w3.org/2000/svg">
-							<line x1="2" y1="0" x2="2" y2="100"
-								  style="stroke: #8F607C; stroke-width: 2"/>
-						</svg>#}
-						<h3 style="color: #8F607C">Réalisé par :</h3>
-						<p> </p>
-						<h3 style="color: #06A243">En collaboration avec :</h3>
-						<p> </p>
-						<h3 style="color: #92D4F2">Avec l’appui de :</h3>
-						<p> </p>
+			</div>
+		</section>
+			<section class="front-page--about-us">
+				<div class="content-container">
+					<div class="front-page--columns columns__50-50" style="text-align: left">
+						<div>
+							<h1>Qui sommes-nous ?</h1>
+							<p>La plateforme Nos pollinisateurs est créée par des passionnés de plusieurs domaines :</p>
+							<p> </p>
+							{#<svg viewBox="0 0 4 100" xmlns="http://www.w3.org/2000/svg">
+								<line x1="2" y1="0" x2="2" y2="100"
+										style="stroke: #8F607C; stroke-width: 2"/>
+							</svg>#}
+							<h3 style="color: #8F607C">Réalisé par :</h3>
+							<p> </p>
+							<h3 style="color: #06A243">En collaboration avec :</h3>
+							<p> </p>
+							<h3 style="color: #92D4F2">Avec l’appui de :</h3>
+							<p> </p>
 					</div>
 					<img src="{{ asset('media/layout/help.svg') }}" alt="" style="width:25%">
+				</div>
 			</section>
 			<p>
 			{#<img src="{{ asset('media/layout/logos_naturadapt_2022.png') }}" alt="partenaires du Nos Pollinisateurs">#}
 			</p>
 			</section>
-		</div>
 	</section>
 {% endblock %}
