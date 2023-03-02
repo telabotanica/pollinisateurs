@@ -14,37 +14,88 @@
 	.main--content section:not(:first-child) {
 		margin-top: rem(80px);
 	}
-
-	.main--content section:not(:last-child) {
-		margin-bottom: rem(80px);
-	}
 }
+
+// Front page INFO
+
+.front-page--info{
+  padding: 140px 0;
+  background-color: $color_blue_sky;
+}
+
 .front-page--title {
-  text-align: center;
-  font-weight: bold;
-  font-family: "Century Gothic", Helvetica, Arial, sans-serif;
   font-size: 26px;
   margin-bottom: 3.75rem;
+  text-align: center;
 
-  & h2 {
+  &,
+  h2 {
     font-weight: bold;
+    font-family: "Century Gothic Bold", Helvetica, Arial, sans-serif;
+    color: #333;
   }
 }
 
 .front-page--columns {
 	text-align: center;
 
-	svg {
-		height: rem(85px);
-	}
-
   &.columns-25{
-    background-color: red;
     display: grid;
+    grid-column-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-      }
+  }
+}
+
+.front-page--card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-background {
+  margin-bottom: 24px;
+
+  &.green {
+    background-color: #06A243;
+
+    & svg {
+      fill: #0ae372;
+    }
+  }
+  &.blue {
+    background-color: #92D4F2;
+
+    & svg {
+      fill: #dff2fb;
+    }
+  }
+  &.yellow {
+    background-color: #F3CC00;
+
+    & svg {
+      fill: #e79900;
+    }
+  }
+  &.purple {
+    background-color: #8F607C;
+
+    & svg {
+      fill: #dea3d3;
+    }
+  }
+
+  &.green,
+  &.blue,
+  &.yellow,
+  &.purple {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    width: 150px;
+  }
 }
 
 .front-page--focus {
