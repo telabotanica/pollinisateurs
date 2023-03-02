@@ -394,6 +394,14 @@ pages:
                     labels:
                         private: "Private individuals"
                         professional: "Professionals"
+                favorite_environment:
+                    labels:
+                        garden: "Garden"
+                        urban area: "Urban area"
+                        rural area: "Rural area"
+                        field/forest: "Field/Forest"
+                        nature: "Nature"
+                        other: "Other"
                 skills:
                     label: "Skills"
             query:
