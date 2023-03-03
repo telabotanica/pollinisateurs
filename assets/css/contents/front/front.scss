@@ -18,21 +18,22 @@
 
 // SECTION INFO
 .front-page--info {
-    padding: rem(140px) 0;
+    padding:          rem(140px) 0;
     background-color: $color_white;
 
     @include small-or-less { padding: rem(70px) 0; }
 
   &-title {
-    font-size: rem(26px);
-    margin-bottom: 3.75rem;
-    text-align: center;
-
-    &,
     h2 {
-      font-weight: bold;
-      font-family: "Century Gothic Bold", Helvetica, Arial, sans-serif;
-      color: #333;
+      font-family:    "Century Gothic Bold", Helvetica, Arial, sans-serif;
+      font-size:      rem(26px);
+      font-weight:    bold;
+      margin-bottom:  3.75rem;
+      text-align:     center;
+
+      &:first-child {
+        margin-bottom: rem(4px);
+      }
     }
   }
 
@@ -124,7 +125,7 @@
 
 // SECTION HOW IT WORKS
 .front-page--how-it-works{
-  padding: rem(140px) 0;
+  padding:          rem(140px) 0;
   background-color: $color_blue_sky;
 
   &-cta {
@@ -169,9 +170,9 @@
     }
 
     @include small-or-less {
-      padding: 5rem 3.125rem;
-      margin: 0;
-      max-width: initial;
+      padding:    5rem 3.125rem;
+      margin:     0;
+      max-width:  initial;
     }
   }
 }
@@ -185,7 +186,10 @@
   background-position:  right, left;
   text-align:           center;
 
-  @include small-or-less { padding: 5.5rem 3.125rem; }
+  @include small-or-less {
+    background-image: none;
+    padding: 5.5rem 3.125rem;
+  }
 }
 
 // SECTION ABOUT US
