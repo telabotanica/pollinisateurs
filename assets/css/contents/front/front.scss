@@ -199,6 +199,7 @@
 
   .content-container{
     @include medium-or-less { padding: 0 7.125rem; }
+    @include small-or-less { padding: 0; }
   }
 }
 
@@ -211,21 +212,18 @@
   }
 
   &-description {
-    margin-top:     rem(100px);
-    margin-bottom:  rem(100px);
-    margin-right:   rem(100px);
+    margin: 0 rem(100px) rem(100px) rem(100px);
     max-width:      26.75rem;
-
 
     @include medium-or-less { margin: rem(50px) auto; }
     @include small-or-less {
-      width:          100%;
       padding:        0;
+      width:          100%;
     }
 
     &-block {
-      padding-left: rem(25px);
       border-left:  solid rem(4px);
+      padding-left: rem(25px);
 
       &.companions {
         border-color: $color_purple;
@@ -243,21 +241,16 @@
 
       h3 {
         font-weight: bold;
-
-        @include small-or-less {
-          margin-bottom: rem(15px);
-        }
+        @include small-or-less {  margin-bottom: rem(15px);}
       }
 
-      @include small-or-less {
-        padding-bottom: rem(35px);
-      }
+      @include small-or-less { padding-bottom: rem(35px);}
     }
 
     &-title {
       @include small-or-less {
-        font-size:  rem(20px);
-        margin :    0 0 rem(20px) 0;
+        font-size: rem(20px);
+        margin:    0 0 rem(20px) 0;
       }
     }
   }
@@ -266,8 +259,10 @@
     max-height: 808px;
     object-fit: cover;
 
-    @include medium-or-less { width: 100%; }
-    @include small-or-less { display: none; }
+    @include medium-or-less {
+      display: none;
+      width: 100%;
+   }
   }
 
   @include small-or-less { padding: 2.5rem 3.125rem; }
@@ -299,3 +294,5 @@
 		}
 	}
 }
+
+body.frontpage .footer { margin-top: 0; }
