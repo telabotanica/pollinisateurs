@@ -178,9 +178,12 @@
 
 // SECTION BANNER
 .front-page--banner{
-  padding:          rem(140px) 0;
-  background-color: $color_blue_sky;
-  text-align:       center;
+  padding:              rem(140px) 0;
+  background-color:     $color_blue_sky;
+  background-image:     url("/public/media/layout/bubble-background.png"), url("/public/media/layout/bubble-background-flip.png");
+  background-repeat:    no-repeat, no-repeat, no-repeat;
+  background-position:  right, left;
+  text-align:           center;
 
   @include small-or-less { padding: 5.5rem 3.125rem; }
 }
