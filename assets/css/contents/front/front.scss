@@ -212,7 +212,7 @@
   }
 
   &-description {
-    margin: 0 rem(100px) rem(100px) rem(100px);
+    margin: rem(100px) rem(100px);
     max-width:      26.75rem;
 
     @include medium-or-less { margin: rem(50px) auto; }
