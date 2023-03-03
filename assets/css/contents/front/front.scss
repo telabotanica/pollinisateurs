@@ -16,17 +16,12 @@
 	}
 }
 
-// INFO
-.front-page{
-
-  &-info{
+// SECTION INFO
+.front-page--info {
     padding: rem(140px) 0;
-    background-color: white;
+    background-color: $color_white;
 
-    @include small-or-less{
-      padding: rem(70px) 0;
-    }
-  }
+    @include small-or-less { padding: rem(70px) 0; }
 
   &-title {
     font-size: rem(26px);
@@ -50,7 +45,7 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
 
-      @include medium{
+      @include medium-or-less{
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: rem(30px);
         grid-row-gap: rem(50px);
@@ -75,28 +70,28 @@
     &.green {
       background-color: $color_green;
 
-      & svg {
+      svg {
         fill: $color_green-haze;
       }
     }
     &.blue {
       background-color: $color_blue;
 
-      & svg {
+      svg {
         fill: $color_jordy-blue;
       }
     }
     &.yellow {
       background-color: $color_yellow;
 
-      & svg {
+      svg {
         fill: $color_tangerine;
       }
     }
     &.purple {
       background-color: $color_purple;
 
-      & svg {
+      svg {
         fill: $color_light-orchid;
       }
     }
@@ -111,14 +106,23 @@
       border-radius:    50%;
       height:           rem(150px);
       width:            rem(150px);
+
+      @include small-or-less {
+        height: rem(128px);
+        width:  rem(128px); }
     }
 
     @include medium-or-less { margin-bottom: rem(20px); }
-    @include small-or-less { margin-bottom: rem(16px); }
+    @include small-or-less  { margin-bottom: rem(16px); }
+
+
+    &-description{
+      @include small-or-less  { width: 70%; }
+    }
   }
 }
 
-// HOW IT WORKS
+// SECTION HOW IT WORKS
 .front-page--how-it-works{
   padding: rem(140px) 0;
   background-color: $color_blue_sky;
@@ -126,40 +130,38 @@
   &-cta {
     margin-top: rem(40px);
   }
+
+  @include small-or-less { padding: 5rem 3.125rem; }
 }
 
-// POLLINATING
+// SECTION POLLINATING
 .front-page--pollinating{
-  background-color: white;
+  background-color: $color_white;
 
   &-image{
     object-fit: cover;
 
-
-    @include medium-or-less {
-      width: 100%;
-    }
+    @include medium-or-less { width: 100%; }
   }
   & .columns__50-50 {
     justify-content: flex-start;
   }
 
   &-description {
-    margin-top: rem(100px);
-    margin-bottom: rem(100px);
-    margin-left: rem(100px);
-    max-width: 26.75rem;
+    margin-top:     rem(100px);
+    margin-bottom:  rem(100px);
+    margin-left:    rem(100px);
+    max-width:      26.75rem;
 
-    & h1{
-      font-size: rem(40px);
-      color: #333;
-      font-weight: bold;
-      font-family: "Century Gothic Bold", Helvetica, Arial, sans-serif;
+    h1{
+      font-size:    rem(40px);
+      font-weight:  bold;
+      font-family:  "Century Gothic Bold", Helvetica, Arial, sans-serif;
     }
 
-    & h3 {
+    h3 {
       font-size: rem(26px);
-      color: #8F607C;
+      color: $color_purple;
     }
 
     @include medium-or-less {
@@ -167,62 +169,85 @@
     }
 
     @include small-or-less {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
-      padding-bottom: 5rem;
+      padding: 5rem 3.125rem;
+      margin: 0;
+      max-width: initial;
     }
   }
 }
 
-// BANNER
+// SECTION BANNER
 .front-page--banner{
-  padding: rem(140px) 0;
+  padding:          rem(140px) 0;
   background-color: $color_blue_sky;
-  text-align: center;
+  text-align:       center;
 
-  @include small-or-less {
-    padding: rem(70px) 0;
-  }
+  @include small-or-less { padding: 5.5rem 3.125rem; }
 }
 
-// ABOUT US
+// SECTION ABOUT US
 .front-page--about-us{
-  background-color: white;
+  background-color:  $color_white;
 
-  & .columns__50-50 {
+  .columns__50-50 {
     justify-content: flex-end;
   }
 
   &-description {
-    margin-top: rem(100px);
-    margin-bottom: rem(100px);
-    margin-right: rem(100px);
-    max-width: 26.75rem;
+    margin-top:     rem(100px);
+    margin-bottom:  rem(100px);
+    margin-right:   rem(100px);
+    max-width:      26.75rem;
 
-    @include medium-or-less {
-      margin: rem(50px) auto;
-    }
+
+    @include medium-or-less { margin: rem(50px) auto; }
     @include small-or-less {
-      width: 100%;
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
-      padding: 6.25rem 0;
+      width:          100%;
+      padding:        0;
+    }
+
+    &-block {
+      padding-left: rem(25px);
+      border-left:  solid rem(4px);
+
+      &.companions {
+        border-color: $color_purple;
+      }
+
+      &.sponsors {
+        border-color: $color_green;
+      }
+
+      &.partners {
+        border-color: $color_blue;
+      }
+
+    }
+
+    &-title {
+      @include small-or-less {
+        font-size:  rem(20px);
+        margin :    0 0 rem(20px) 0;
+      }
     }
   }
+
   &-image{
     max-height: 808px;
     object-fit: cover;
 
-    @include medium-or-less {
-      width: 100%;
-    }
+    @include medium-or-less { width: 100%; }
+    @include small-or-less { display: none; }
   }
+
+  @include small-or-less { padding: 2.5rem 3.125rem; }
 }
 
 // OBJECTIVE
 .front-page--objective {
 	@include small-or-less {
 		text-align: center;
+    padding:    2.5rem 3.125rem;
 
 		svg {
 			max-width:     rem(145px);

@@ -21,36 +21,36 @@
 				</div>
 			</div>
 		</div>
-		<section class="front-page-info">
+		<section class="front-page--info">
 			<div class="content-container">
-				<div class="front-page-title">
+				<div class="front-page--info-title">
 					<h2>Intéressé⋅e par le merveilleux monde des pollinisateurs et leur préservation ?</h2>
-					<p>Vous trouverez sur cette plateforme :</p>
+					<h2>Vous trouverez sur cette plateforme :</h2>
 				</div>
-				<div class="front-page-columns columns-25">
-					<div class="front-page-card">
-						<div class="front-page-icon-background yellow">
+				<div class="front-page--info-columns columns-25">
+					<div class="front-page--info-card">
+						<div class="front-page--info-icon-background yellow">
 								{% include 'assets/svg/echange.svg' %}
 						</div>
-						<p>Des projets collaboratifs pour mettre vos envies et savoirs faires au profit d’actions concrètes.</p>
+						<p class="front-page--info-icon-background-description">Des projets collaboratifs pour mettre vos envies et savoirs faires au profit d’actions concrètes.</p>
 					</div>
-					<div class="front-page-card">
-						<div class="front-page-icon-background purple">
+					<div class="front-page--info-card">
+						<div class="front-page--info-icon-background purple">
 								{% include 'assets/svg/protection.svg' %}
 						</div>
-						<p>Des programmes de sciences participatives et d’autres moyens d’agir quelque soit votre niveau et votre milieu de vie.</p>
+						<p class="front-page--info-icon-background-description">Des programmes de sciences participatives et d’autres moyens d’agir quelque soit votre niveau et votre milieu de vie.</p>
 					</div>
-					<div class="front-page-card">
-						<div class="front-page-icon-background blue">
+					<div class="front-page--info-card">
+						<div class="front-page--info-icon-background blue">
 								{% include 'assets/svg/recherche.svg' %}
 						</div>
-						<p>D’autres passionnés ou curieux de nature touchés par le déclin des pollinisateurs et souhaitant agir pour leur préservation.</p>
+						<p class="front-page--info-icon-background-description">D’autres passionnés ou curieux de nature touchés par le déclin des pollinisateurs et souhaitant agir pour leur préservation.</p>
 					</div>
-					<div class="front-page-card">
-						<div class="front-page-icon-background green">
+					<div class="front-page--info-page-card">
+						<div class="front-page--info-icon-background green">
 								{% include 'assets/svg/dossier.svg' %}
 						</div>
-						<p>Des ressources accessibles et scientifiquement validées pour mieux les connaître et reconnaître.</p>
+						<p class="front-page--info-icon-background-description">Des ressources accessibles et scientifiquement validées pour mieux les connaître et reconnaître.</p>
 					</div>
 				</div>
 			</div>
@@ -99,12 +99,18 @@
 						<div class="front-page--about-us-description">
 							<h1>Qui sommes-nous ?</h1>
 							<p>La plateforme Nos pollinisateurs est créée par des passionnés de plusieurs domaines :</p>
-							<h3 style="color: #8F607C">Réalisé par :</h3>
-							<img src="{{ asset('media/layout/logos_naturadapt_2022.png') }}" alt="partenaires du Nos Pollinisateurs">
-							<h3 style="color: #06A243">En collaboration avec :</h3>
-							<img src="{{ asset('media/layout/logos_naturadapt_2022.png') }}" alt="partenaires du Nos Pollinisateurs">
-							<h3 style="color: #92D4F2">Avec l’appui de :</h3>
-							<img src="{{ asset('media/layout/logos_naturadapt_2022.png') }}" alt="partenaires du Nos Pollinisateurs">
+							<div class="front-page--about-us-description-block companions">
+								<h3 style="color: #8F607C" class="front-page--about-us-description-title">Réalisé par :</h3>
+								<img src="" alt="partenaires du Nos Pollinisateurs">
+							</div>
+							<div class="front-page--about-us-description-block sponsors">
+								<h3 style="color: #06A243" class="front-page--about-us-description-title">En collaboration avec :</h3>
+								<img src="" alt="partenaires du Nos Pollinisateurs">
+							</div>
+							<div class="front-page--about-us-description-block partners">
+								<h3 style="color: #92D4F2" class="front-page--about-us-description-title">Avec l’appui de :</h3>
+								<img src="" alt="partenaires du Nos Pollinisateurs">
+							</div>
 					</div>
 					<img class="front-page--about-us-image" src="{{ asset('/media/layout/BIOS-2466801.jpg') }}" alt="blue butterfly">
 			</section>
