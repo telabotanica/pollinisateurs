@@ -222,8 +222,13 @@
     }
 
     &-block {
-      border-left:  solid rem(4px);
-      padding-left: rem(25px);
+      border-left:    solid rem(4px);
+      padding-left:   rem(25px);
+      padding-bottom: rem(40px);
+
+      &:last-child {
+        padding-bottom: 0;
+      }
 
       &.companions {
         border-color: $color_purple;
@@ -248,6 +253,9 @@
     }
 
     &-title {
+      margin-top: 0;
+      margin-bottom: rem(10px);
+
       @include small-or-less {
         font-size: rem(20px);
         margin:    0 0 rem(20px) 0;
