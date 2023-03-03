@@ -23,10 +23,13 @@
 
     @include small-or-less { padding: rem(70px) 0; }
 
+  .content-container{
+    @include medium-or-less { padding: 0 3.125rem; }
+  }
+
   &-title {
-    h2 {
+    h1 {
       font-family:    "Century Gothic Bold", Helvetica, Arial, sans-serif;
-      font-size:      rem(26px);
       font-weight:    bold;
       margin-bottom:  3.75rem;
       text-align:     center;
@@ -34,6 +37,8 @@
       &:first-child {
         margin-bottom: rem(4px);
       }
+
+      @include small-or-less { font-size: 1.4375rem; }
     }
   }
 
@@ -131,7 +136,7 @@
   &-cta {
     margin-top: rem(40px);
   }
-
+  @include medium-or-less { padding: rem(70px) 3.125rem; }
   @include small-or-less { padding: 5rem 3.125rem; }
 }
 
@@ -146,6 +151,8 @@
   }
   & .columns__50-50 {
     justify-content: flex-start;
+
+    @include medium-or-less { flex-direction: column; }
   }
 
   &-description {
@@ -155,18 +162,17 @@
     max-width:      26.75rem;
 
     h1{
-      font-size:    rem(40px);
       font-weight:  bold;
       font-family:  "Century Gothic Bold", Helvetica, Arial, sans-serif;
     }
 
     h3 {
-      font-size: rem(26px);
       color: $color_purple;
+      @include small-or-less { font-size: rem(22px); }
     }
 
     @include medium-or-less {
-      margin: rem(50px) auto;
+      padding: 0;
     }
 
     @include small-or-less {
@@ -189,6 +195,10 @@
   @include small-or-less {
     background-image: none;
     padding: 5.5rem 3.125rem;
+  }
+
+  .content-container{
+    @include medium-or-less { padding: 0 7.125rem; }
   }
 }
 
@@ -219,6 +229,8 @@
 
       &.companions {
         border-color: $color_purple;
+
+        img { @include small-or-less { width: rem(100px); }}
       }
 
       &.sponsors {
@@ -231,6 +243,14 @@
 
       h3 {
         font-weight: bold;
+
+        @include small-or-less {
+          margin-bottom: rem(15px);
+        }
+      }
+
+      @include small-or-less {
+        padding-bottom: rem(35px);
       }
     }
 
