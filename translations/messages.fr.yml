@@ -103,7 +103,7 @@ forms:
     group:
         name:
             label: "Nom du groupe"
-            placeholder: "Exemple : Autour des glaciers"
+            placeholder: "Exemple : Autour des abeilles"
         slug:
             label: "Identifiant"
             placeholder: "Sera généré automatiquement"
