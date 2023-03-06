@@ -8,7 +8,7 @@
 	.flash {
 		@include font_helvetica;
 
-		font-weight:      normal;
+		font-weight:      lighter;
 		position:         relative;
 		margin-bottom:    1rem;
 		padding:          padding_vertical() rem(50px);
@@ -52,8 +52,8 @@
 	}
 
 	.flash__warning {
-		background-color: $color_orange;
-		border-color: 		$color_orange;
+		background-color: $color_orange_light;
+		border-color: 		$color_orange_light;
 	}
 
 	.flash__error {
