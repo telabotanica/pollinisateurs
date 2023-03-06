@@ -56,9 +56,9 @@ forms:
             hint: "Votre environnement de prédilection pour agir"
             labels:
                 garden: "jardin"
-                urban area: "milieu urbanisé"
-                rural area: "milieu rural"
-                field/forest: "agricole/sylvicole"
+                urban_area: "milieu urbanisé"
+                rural_area: "milieu rural"
+                field_forest: "agricole/sylvicole"
                 nature: "naturel"
                 other: "autre"
         skills:
@@ -397,9 +397,9 @@ pages:
                 favorite_environment:
                     labels:
                         garden: "Jardin"
-                        urban area: "Milieu urbain"
-                        rural area: "Milieu rural"
-                        field/forest: "Agricole/Sylvicole"
+                        urban_area: "Milieu urbain"
+                        rural_area: "Milieu rural"
+                        field_forest: "Agricole/Sylvicole"
                         nature: "Naturel"
                         other: "Autre"
                 skills:
