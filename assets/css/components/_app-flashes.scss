@@ -30,8 +30,8 @@
 	}
 
 	.flash__notice {
-		border-color: 		$color_blue_cloud;
-    background-color: $color_blue_cloud;
+		border-color:		$color_blue_cloud;
+		background-color:	$color_blue_cloud;
 
 		&::before {
 			background-color: $color_lime_green;
@@ -52,12 +52,12 @@
 	}
 
 	.flash__warning {
-		background-color: $color_orange_light;
-		border-color: 		$color_orange_light;
+		background-color:	$color_orange_light;
+		border-color:		$color_orange_light;
 	}
 
 	.flash__error {
-		background-color: $color_red_light;
+		background-color:	$color_red_light;
 		border-color: 		$color_red_light;
 	}
 }
