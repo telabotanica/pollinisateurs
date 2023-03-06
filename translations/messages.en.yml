@@ -397,9 +397,9 @@ pages:
                 favorite_environment:
                     labels:
                         garden: "Garden"
-                        urban area: "Urban area"
-                        rural area: "Rural area"
-                        field/forest: "Field/Forest"
+                        urban_area: "Urban area"
+                        rural_area: "Rural area"
+                        field_forest: "Field/Forest"
                         nature: "Nature"
                         other: "Other"
                 skills:
