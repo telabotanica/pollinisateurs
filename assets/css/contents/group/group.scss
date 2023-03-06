@@ -396,6 +396,8 @@
 	}
 
 	.group-apps {
+
+		@include font_helvetica;
 		@include columns;
 
 		@include medium-or-more {
@@ -444,9 +446,11 @@
 
 			text-align: center;
 
-			font-size:  rem(16px);
+			font-size:  	rem(16px);
+			font-weight: 	bold;
 
 			color:      $color_aubergine;
+
 		}
 	}
 
