@@ -28,7 +28,7 @@
   }
 
   &-title {
-    h1 {
+    h2 {
       @include h1;
       margin-bottom:  3.75rem;
       text-align:     center;
@@ -135,12 +135,13 @@
   &-cta {
     margin-top: rem(40px);
   }
+
   @include medium-or-less { padding: rem(70px) 3.125rem; }
   @include small-or-less { padding: 5rem 3.125rem; }
 }
 
 // SECTION POLLINATING
-.front-page--pollinating{
+.front-page--pollinating {
   background-color: $color_white;
 
   &-image{
@@ -160,7 +161,7 @@
     margin-left:    rem(100px);
     max-width:      26.75rem;
 
-    h1{
+    h2 {
       @include h1;
     }
 
