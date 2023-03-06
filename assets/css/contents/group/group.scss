@@ -500,6 +500,10 @@
 		font-size: rem(16px);
 		color:     black;
 		max-width: 80%;
+
+		@include small-or-less {
+			max-width: 100%;
+		}
 	}
 
 	.group-last-activity {
