@@ -29,8 +29,7 @@
 
   &-title {
     h1 {
-      font-family:    "Century Gothic Bold", Helvetica, Arial, sans-serif;
-      font-weight:    bold;
+      @include h1;
       margin-bottom:  3.75rem;
       text-align:     center;
 
@@ -162,8 +161,7 @@
     max-width:      26.75rem;
 
     h1{
-      font-weight:  bold;
-      font-family:  "Century Gothic Bold", Helvetica, Arial, sans-serif;
+      @include h1;
     }
 
     h3 {
