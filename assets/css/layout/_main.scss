@@ -16,8 +16,8 @@ main {
 .main--header__cover {
 	min-height: math.div(688, 1366) * 100vw;
 
-	@include xlarge{ min-height: rem(850px); }
-  @include large-or-more { min-height: rem(600px); }
+	@include xlarge { min-height: rem(850px); }
+	@include large-or-more { min-height: rem(600px); }
 
 }
 
