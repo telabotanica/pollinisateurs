@@ -496,10 +496,10 @@
 
 	.group-name {
 		@include font_helvetica;
-		font-weight: bold;
-		font-size: rem(16px);
-		color:     black;
-		max-width: 80%;
+		font-weight:	bold;
+		font-size:	rem(16px);
+		color:		black;
+		max-width:	80%;
 
 		@include small-or-less {
 			max-width: 100%;
