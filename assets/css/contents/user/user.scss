@@ -168,9 +168,6 @@
 	.user--avatar {
 		width:  rem(150px);
 		height: rem(150px);
-    background-color: red;
-    // add the clip-path of blob-square svg
-    clip-path: url(#blob-square);
 
 		@include medium-or-more {
 			margin-right: column_gap();
