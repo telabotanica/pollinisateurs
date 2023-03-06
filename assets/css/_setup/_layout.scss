@@ -37,7 +37,7 @@ img {
 }
 
 .cta.cta-front {
-  margin-top: 1.25rem;
+	margin-top: 1.25rem;
 }
 
 .cta__red {
@@ -175,7 +175,7 @@ h3 {
 .narrow {
 	@include large-or-more {
 		margin: 0 auto;
-		width:  100%;
+		width:  84%;
 	}
 }
 
