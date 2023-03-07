@@ -3,7 +3,7 @@
 	<div>
 		<div class="result-type">{{ 'search.results.articles'|trans }}</div>
 		<div class="result-title">{{ actualite.title|raw }}</div>
-		<div class="result-body">{{ actualite.body|striptags('<br><span><p>')|raw }}</div>
+		<div class="result-body">{{ actualite.body|striptags('<br><em><p>')|raw }}</div>
 		<div class="result-group">
 			{% if (actualite.group_logo_path is defined) and (actualite.group_logo_path is not null) %}
 				<div class="group-logo">
