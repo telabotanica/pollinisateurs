@@ -44,20 +44,30 @@ forms:
             placeholder: "Exemple : Botaniste"
         bio:
             label: "Bio"
-            hint: "Précisez ce que vous faites dans la vie, ce que vous recherchez sur la plateforme… (sera affiché sur votre profil)"
+            hint: "Indiquez votre niveau de connaissance sur les pollinisateurs, ce qui vous intéresse, les actions que vous effectuez ou recherchez, etc. Tout ce que vous souhaitez partager avec les autres (sera affiché sur votre profil)."
             placeholder: "Dites nous en plus sur vous…"
         inscription_type:
             label: "Type d’inscription"
             labels:
                 private: "Inscription à titre personnel"
                 professional: "Inscription à titre professionnel"
+        favorite_environment:
+            label: "Milieu d’action"
+            hint: "Votre environnement de prédilection pour agir"
+            labels:
+                garden: "jardin"
+                urban_area: "milieu urbanisé"
+                rural_area: "milieu rural"
+                field_forest: "agricole/sylvicole"
+                nature: "naturel"
+                other: "autre"
         skills:
-            label: "Vos compétences"
-            hint: "Sélectionnez dans la liste proposée les compétences que vous souhaitez partager"
+            label: "Vos centres d’intérêt et connaissances"
+            hint: "Sélectionnez dans la liste proposée les centres d’intérêt et connaissances que vous souhaitez partager"
         site:
-            label: "Votre site naturel"
-            hint: "Parce que vous y travaillez, vous y habitez ou simplement si vous êtes particlièrement attaché·e à un site naturel en particulier"
-            placeholder: "Exemple : Parc naturel régional des volcans d'Auvergne"
+            label: "Votre site d’observation préféré"
+            hint: "Que ce soit votre jardin, un parc, ou un site naturel, quel est votre coin favori pour observer les pollinisateurs ?"
+            placeholder: "Exemple : Parc naturel régional des volcans d’Auvergne"
         agree_terms:
             label:
                 agree: "J’accepte les "
@@ -93,7 +103,7 @@ forms:
     group:
         name:
             label: "Nom du groupe"
-            placeholder: "Exemple : Autour des glaciers"
+            placeholder: "Exemple : Autour des abeilles"
         slug:
             label: "Identifiant"
             placeholder: "Sera généré automatiquement"
@@ -109,11 +119,11 @@ forms:
             label: "Visibilité du groupe"
             placeholder: ""
         description:
-            label: "Description"
+            label: "Description du groupe"
             hint: "Précisez les but et intention de votre groupe. La description sera affichée sur la page de présentation des groupes."
             placeholder: "Dites nous en plus sur votre groupe…"
         presentation:
-            label: "Présentation"
+            label: "Présentation du groupe"
             hint: "Présentez votre groupe. La présentation sera affichée sur la page du groupe."
             placeholder: "Présentation du groupe, ses objectifs…"
 
@@ -384,8 +394,16 @@ pages:
                     labels:
                         private: "Grand public"
                         professional: "Professionnel"
+                favorite_environment:
+                    labels:
+                        garden: "Jardin"
+                        urban_area: "Milieu urbain"
+                        rural_area: "Milieu rural"
+                        field_forest: "Agricole/Sylvicole"
+                        nature: "Naturel"
+                        other: "Autre"
                 skills:
-                    label: "Compétences"
+                    label: "Centres d’interêt et connaissances"
             query:
                 placeholder: "Chercher un membre par nom, pseudo, bio…"
             search: "Filtrer"
@@ -400,7 +418,7 @@ pages:
             member_set_banned: "Bannir"
         profile:
             skills:
-                title: "Compétences"
+                title: "Centres d’interêt et connaissances"
             bio:
                 title: "Biographie"
             groups:
