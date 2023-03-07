@@ -5,14 +5,7 @@
 		{% set filter = 'avatar' %}
 	{% endif %}
 	{% if hasAvatar %}
-		<div class="user--avatar__overlay">
-			<img src="{{ user.avatar.path | imagine_filter(filter) }}" alt="">
-			<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
-				<clipPath id="shape">
-					<path d="M-4997.278-2816.406c-1.359-16.7-1.947-51.846,0-59.079s3.217-17.037,44.5-18.758,56.431.144,70.531.945,34.857,3.72,33.674,62.154-2.077,55.063-2.786,61.454-6.429,25.408-30.888,24.522-52.054,2.041-74.952-1.932-39.738,1.332-38.312-25.392S-4997.278-2816.406-4997.278-2816.406Z" transform="translate(4998.528 2894.949)"/>
-				</clipPath>
-			</svg>
-		</div>
+		<img src="{{ user.avatar.path | imagine_filter(filter) }}" alt="">
 	{% else %}
 		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
 			<use xlink:href="#user"/>
