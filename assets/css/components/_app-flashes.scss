@@ -6,35 +6,28 @@
 	margin-bottom: rem(50px);
 
 	.flash {
-		@include font_helvetica;
-
-		font-weight:      lighter;
 		position:         relative;
 		margin-bottom:    1rem;
 		padding:          padding_vertical() rem(50px);
 
 		color:            $color_default;
-		background-color: white;
-		border:           1px solid $color_default;
-		border-radius:    rem(3px);
-		line-height: 			normal;
+		background-color: $color_blue_cloud;
+		font-size:        14px;
 
 		&::before {
 			content:  '';
 			position: absolute;
 			width:    1.5rem;
 			height:   1.5rem;
-			top:      1rem;
+			top:      35%;
 			left:     0.9rem;
 		}
 	}
 
 	.flash__notice {
-		border-color:		$color_blue_cloud;
-		background-color:	$color_blue_cloud;
 
 		&::before {
-			background-color: $color_lime_green;
+			background-color: $color_green_dark;
 			border-radius:    50%;
 		}
 
@@ -43,7 +36,7 @@
 			position:      absolute;
 			width:         0.9rem;
 			height:        0.5rem;
-			top:           1.4rem;
+			top:           45%;
 			left:          1.2rem;
 			border-left:   2px solid white;
 			border-bottom: 2px solid white;
@@ -52,12 +45,10 @@
 	}
 
 	.flash__warning {
-		background-color:	$color_orange_light;
-		border-color:		$color_orange_light;
+		border-color: $color_orange;
 	}
 
 	.flash__error {
-		background-color:	$color_red_light;
-		border-color: 		$color_red_light;
+		border-color: $color_orange_red;
 	}
 }
