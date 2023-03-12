@@ -4,6 +4,7 @@ namespace App\Service;
 
 use App\Entity\DiscussionMessage;
 use App\Postmark\BulkTransport;
+use Postmark\ThrowExceptionOnFailurePlugin;
 use Swift_Message;
 use Throwable;
 use Twig\Environment;
@@ -29,6 +30,9 @@ class DiscussionSender {
 		$this->transport = $transport;
 		$this->params    = $params;
 		$this->twig      = $twig;
+
+		// Throw exceptions on Postmark api errors:
+		$this->transport->registerPlugin(new ThrowExceptionOnFailurePlugin());
 	}
 
 	/**
