@@ -418,6 +418,8 @@ pages:
             member_set_remove: "Remove from groupe"
             member_set_banned: "Ban"
         profile:
+            favorite_environment:
+                title: "Favorite Environment"
             skills:
                 title: "Interests and knowledge"
             bio:

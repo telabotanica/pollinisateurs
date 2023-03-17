@@ -418,6 +418,8 @@ pages:
             member_set_remove: "Supprimer du groupe"
             member_set_banned: "Bannir"
         profile:
+            favorite_environment:
+                title: "Milieu d'action"
             skills:
                 title: "Centres d’interêt et connaissances"
             bio:
