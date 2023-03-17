@@ -395,6 +395,7 @@ pages:
                         private: "Private individuals"
                         professional: "Professionals"
                 favorite_environment:
+                    label: "Favorite Environment"
                     labels:
                         garden: "Garden"
                         urban_area: "Urban area"

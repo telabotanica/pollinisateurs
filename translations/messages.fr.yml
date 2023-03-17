@@ -395,6 +395,7 @@ pages:
                         private: "Grand public"
                         professional: "Professionnel"
                 favorite_environment:
+                    label: "Milieu d'action"
                     labels:
                         garden: "Jardin"
                         urban_area: "Milieu urbain"
