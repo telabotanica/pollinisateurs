@@ -395,6 +395,7 @@ pages:
                         private: "Private individuals"
                         professional: "Professionals"
                 favorite_environment:
+                    label: "Favorite Environment"
                     labels:
                         garden: "Garden"
                         urban_area: "Urban area"
@@ -417,6 +418,15 @@ pages:
             member_set_remove: "Remove from groupe"
             member_set_banned: "Ban"
         profile:
+            favorite_environment:
+                title: "Favorite Environment"
+                labels:
+                    garden: "Garden"
+                    urban_area: "Urban area"
+                    rural_area: "Rural area"
+                    field_forest: "Field/Forest"
+                    nature: "Nature"
+                    other: "Other"
             skills:
                 title: "Interests and knowledge"
             bio:

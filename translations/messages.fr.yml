@@ -395,6 +395,7 @@ pages:
                         private: "Grand public"
                         professional: "Professionnel"
                 favorite_environment:
+                    label: "Milieu d'action"
                     labels:
                         garden: "Jardin"
                         urban_area: "Milieu urbain"
@@ -417,6 +418,15 @@ pages:
             member_set_remove: "Supprimer du groupe"
             member_set_banned: "Bannir"
         profile:
+            favorite_environment:
+                title: "Milieu d'action"
+                labels:
+                    garden: "Jardin"
+                    urban_area: "Milieu urbain"
+                    rural_area: "Milieu rural"
+                    field_forest: "Agricole/Sylvicole"
+                    nature: "Naturel"
+                    other: "Autre"
             skills:
                 title: "Centres d’interêt et connaissances"
             bio:
