@@ -34,10 +34,11 @@
 		<div class="user--presentation">{{ user.presentation }}</div>
 
 		{% if user.favoriteenvironment is not empty %}
+			{% set translation_string = 'pages.member.profile.favorite_environment.labels.' ~user.favoriteenvironment %}
 			<div class="user--favorite_environment">
 				<h2 class="h3">{{ 'pages.member.profile.favorite_environment.title'|trans }}&nbsp;:</h2>
 
-				<p>{{ user.favoriteenvironment }}</p>
+				<p>{{ translation_string|trans }}</p>
 			</div>
 		{% endif %}
 
