@@ -420,6 +420,13 @@ pages:
         profile:
             favorite_environment:
                 title: "Milieu d'action"
+                labels:
+                    garden: "Jardin"
+                    urban_area: "Milieu urbain"
+                    rural_area: "Milieu rural"
+                    field_forest: "Agricole/Sylvicole"
+                    nature: "Naturel"
+                    other: "Autre"
             skills:
                 title: "Centres d’interêt et connaissances"
             bio:

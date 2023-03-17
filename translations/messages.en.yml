@@ -420,6 +420,13 @@ pages:
         profile:
             favorite_environment:
                 title: "Favorite Environment"
+                labels:
+                    garden: "Garden"
+                    urban_area: "Urban area"
+                    rural_area: "Rural area"
+                    field_forest: "Field/Forest"
+                    nature: "Nature"
+                    other: "Other"
             skills:
                 title: "Interests and knowledge"
             bio:
