@@ -43,8 +43,7 @@ class DiscussionSender {
 	 */
 	public function sendDiscussionMessage ( DiscussionMessage $discussionMessage, $first = FALSE ) {
 		$subject = ( $first ? '' : 'Re: ' ) . $discussionMessage->getDiscussion()->getTitle();
-		$from    = 'noreply@' . $this->params[ 'list_domain' ];
-
+		$from     = $this->params[ 'sender_signature' ];
 		$to       = $discussionMessage->getDiscussion()->getUsergroup()->getMembers();
 		$messages = [];
 
