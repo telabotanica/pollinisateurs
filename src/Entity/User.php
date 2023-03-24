@@ -24,9 +24,9 @@ class User implements UserInterface {
 	public const TYPE_PROFESSIONNAL = 'professional';
 
 	public const ENVIRONMENT_GARDEN = 'garden';
-	public const ENVIRONMENT_URBAN  = 'urban area';
-	public const ENVIRONMENT_RURAL  = 'rural area';
-	public const ENVIRONMENT_FOREST = 'field/forest';
+	public const ENVIRONMENT_URBAN  = 'urban_area';
+	public const ENVIRONMENT_RURAL  = 'rural_area';
+	public const ENVIRONMENT_FOREST = 'field_forest';
 	public const ENVIRONMENT_NATURE = 'nature';
 	public const ENVIRONMENT_OTHER  = 'other';
 
@@ -291,11 +291,11 @@ class User implements UserInterface {
 	}
 
 	public function getPresentation (): ?string {
-		return mb_substr( $this->presentation, 0, 32 );
+		return mb_substr( $this->presentation ?? '', 0, 32 );
 	}
 
 	public function setPresentation ( ?string $presentation ): self {
-		$this->presentation = mb_substr( trim( $presentation ), 0, 32 );
+		$this->presentation = mb_substr( trim( $presentation ?? '' ), 0, 32 );
 
 		return $this;
 	}
