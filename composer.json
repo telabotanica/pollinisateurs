@@ -4,7 +4,7 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.2",
@@ -59,8 +59,7 @@
         "symfony/maker-bundle": "^1.39.1",
         "symfony/phpunit-bridge": "6.2.*",
         "symfony/stopwatch": "4.4.*",
-        "symfony/web-profiler-bundle": "4.4.*",
-        "symfony/web-server-bundle": "4.4.*"
+        "symfony/web-profiler-bundle": "4.4.*"
     },
     "config": {
         "preferred-install": {
@@ -68,7 +67,7 @@
         },
         "sort-packages": true,
         "platform": {
-            "php": "8.1.15"
+            "php": "8.2.2"
         },
         "allow-plugins": {
             "symfony/flex": true
